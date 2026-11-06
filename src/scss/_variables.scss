@@ -1,0 +1,63 @@
+$accent-hex: #4A4A6A;
+$accent-hover-hex: #3b3b56;
+$bp-tablet: 768px;
+$bp-desktop: 1200px;
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == tablet {
+    @media (min-width: $bp-tablet) {
+      @content;
+    }
+  } @else if $breakpoint == desktop {
+    @media (min-width: $bp-desktop) {
+      @content;
+    }
+  }
+}
+
+:root {
+  --color-accent: #{$accent-hex};
+  --color-accent-hover: #{$accent-hover-hex};
+  --color-accent-contrast: #ffffff;
+  --color-bg: #ffffff;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f0f2f7;
+  --color-text: #23262f;
+  --color-text-muted: #6b7280;
+  --color-border: rgba(35, 38, 47, 0.12);
+  --color-footer-bg: #23262f;
+  --color-focus-ring: #{$accent-hex};
+  --color-media-text: #ffffff;
+
+  --font-primary: "Saira", system-ui, -apple-system, sans-serif;
+  --font-heading-alt: "Raleway", sans-serif;
+  --font-secondary: "Inter", system-ui, sans-serif;
+
+  --fs-display: clamp(1.75rem, 0.9rem + 3.6vw, 4rem);
+  --fs-heading: clamp(1.5rem, 1.1rem + 1.5vw, 2.5rem);
+  --fs-subtitle: clamp(0.9375rem, 0.8rem + 0.5vw, 1.25rem);
+  --fs-card-title: clamp(1rem, 0.8rem + 0.8vw, 1.375rem);
+  --fs-body: clamp(0.875rem, 0.8rem + 0.3vw, 1rem);
+
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.25rem;
+
+  --section-space: clamp(3.25rem, 1.8rem + 5vw, 6.25rem);
+  --max-wrapper: 77.5rem;
+  --side-pad: 1.5rem;
+  --control-size: clamp(2.25rem, 1.8rem + 1.5vw, 3.125rem);
+}
+
+[data-theme="dark"] {
+  --color-bg: #12131a;
+  --color-surface: #1b1d26;
+  --color-surface-muted: #242734;
+  --color-text: #eef0f6;
+  --color-text-muted: #a0a6b8;
+  --color-border: rgba(255, 255, 255, 0.14);
+  --color-footer-bg: #0c0d12;
+  --color-focus-ring: #9d9dc7;
+  color-scheme: dark;
+}

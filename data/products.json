@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "title": "Architect Matte Lamp",
+    "price": 75,
+    "oldPrice": 82,
+    "image": "img/Lamp.avif",
+    "description": "Directional LED desk lamp with glare-free studio lighting",
+    "link": "#catalog"
+  },
+  {
+    "id": 2,
+    "title": "Nordic Swivel Chair",
+    "price": 50,
+    "oldPrice": 70,
+    "image": "img/Chair.avif",
+    "description": "Ergonomic task chair with wooden legs and lumbar support",
+    "link": "#catalog"
+  },
+  {
+    "id": 3,
+    "title": "Oak Library Bookcase",
+    "price": 105,
+    "oldPrice": 120,
+    "image": "img/Bookshelf.avif",
+    "description": "Full-wall modular bookcase for home study and archives",
+    "link": "#catalog"
+  },
+  {
+    "id": 4,
+    "title": "Cobalt Executive Chair",
+    "price": 82,
+    "oldPrice": 100,
+    "image": "img/BlueChair.avif",
+    "description": "High-back acoustic lounge chair for deep focus sessions",
+    "link": "#catalog"
+  },
+  {
+    "id": 5,
+    "title": "Trestle Studio Desk",
+    "price": 200,
+    "oldPrice": 210,
+    "image": "img/WhiteWorkplace.avif",
+    "description": "Spacious white workstation with integrated cable tray",
+    "link": "#catalog"
+  },
+  {
+    "id": 6,
+    "title": "Desktop Organizer Kit",
+    "price": 45,
+    "oldPrice": 50,
+    "image": "img/Staff_Close.avif",
+    "description": "Matte desk pad and accessory set for a clutter-free surface",
+    "link": "#catalog"
+  },
+  {
+    "id": 7,
+    "title": "Walnut Work Desk",
+    "price": 320,
+    "oldPrice": 325,
+    "image": "img/Workplace.avif",
+    "description": "Solid walnut executive table with warm ambient finish",
+    "link": "#catalog"
+  },
+  {
+    "id": 8,
+    "title": "Studio Credenza Unit",
+    "price": 225,
+    "oldPrice": 240,
+    "image": "img/WideRoom.avif",
+    "description": "Low-profile office storage cabinet for documents and gear",
+    "link": "#catalog"
+  },
+  {
+    "id": 9,
+    "title": "Studio Lounge Chair",
+    "price": 95,
+    "oldPrice": 115,
+    "image": "img/BlueChair.avif",
+    "description": "Ergonomic reading armchair in cobalt upholstery",
+    "link": "#catalog"
+  },
+  {
+    "id": 10,
+    "title": "Minimalist Study Desk",
+    "price": 180,
+    "oldPrice": 210,
+    "image": "img/WhiteWorkplace.avif",
+    "description": "Compact home office desk with lower storage shelf",
+    "link": "#catalog"
+  },
+  {
+    "id": 11,
+    "title": "Beige Comfort Task Chair",
+    "price": 70,
+    "oldPrice": 85,
+    "image": "img/Chair.avif",
+    "description": "Soft upholstered swivel seat for everyday remote work",
+    "link": "#catalog"
+  },
+  {
+    "id": 12,
+    "title": "Matte Black Desk Lamp",
+    "price": 60,
+    "oldPrice": 75,
+    "image": "img/Lamp.avif",
+    "description": "Adjustable steel reading light for late-night projects",
+    "link": "#catalog"
+  }
+]
