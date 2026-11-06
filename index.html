@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FurniShop — Ergonomic Home Office &amp; Study Furniture</title>
+  <meta name="description" content="FurniShop: ergonomic standing desks, task chairs, bookcases and smart accessories for a productive home office.">
+  <meta name="color-scheme" content="light dark">
+  <script>
+    try {
+      const saved = localStorage.getItem('user-theme');
+      const sysDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.dataset.theme = saved || (sysDark ? 'dark' : 'light');
+    } catch (err) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Raleway:wght@500;700&family=Saira:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-nav" href="#catalog">Skip to catalog</a>
+
+  <header class="topbar">
+    <div class="wrapper topbar-row">
+      <a class="brand-logo" href="#home">FurniShop</a>
+
+      <nav class="main-nav" id="nav-drawer" aria-label="Primary navigation">
+        <ul class="nav-links">
+          <li><a class="nav-item active" href="#home">Home</a></li>
+          <li><a class="nav-item" href="#about">About</a></li>
+          <li><a class="nav-item" href="#features">Features</a></li>
+          <li><a class="nav-item" href="#contact">Contact</a></li>
+          <li>
+            <button class="mode-switch" type="button" aria-pressed="false">
+              <span class="mode-switch-label">Dark mode</span>
+              <span class="mode-switch-icon" aria-hidden="true"></span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="topbar-controls">
+        <button class="bag-btn" type="button" aria-label="Shopping cart, 0 items">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 4h2l2.4 11h10.2L20 7H6"/>
+            <circle cx="9" cy="19.5" r="1.5"/>
+            <circle cx="17" cy="19.5" r="1.5"/>
+          </svg>
+          <span class="bag-badge" aria-hidden="true">0</span>
+        </button>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-drawer" aria-label="Open navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-banner" id="home" aria-labelledby="main-heading">
+      <img class="hero-media" src="img/WideRoom.avif" alt="" width="1440" height="850">
+      <span class="hotspot hotspot-a" aria-hidden="true"></span>
+      <span class="hotspot hotspot-b" aria-hidden="true"></span>
+      <span class="hotspot hotspot-c" aria-hidden="true"></span>
+
+      <div class="wrapper hero-layout">
+        <div class="hero-box">
+          <h1 class="hero-heading" id="main-heading">Creative Home Office Simplify Your Workday</h1>
+          <p class="hero-subtitle">Ergonomic standing desks, lumbar-support chairs and acoustic storage designed for deep focus and effortless daily productivity.</p>
+          <a class="action-btn action-btn-frosted" href="#catalog">Shop Now</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="metrics-bar" aria-label="Company statistics">
+      <div class="wrapper">
+        <ul class="metrics-grid">
+          <li class="metric-cell">
+            <strong class="metric-value">7</strong>
+            <span class="metric-caption">Year Experience</span>
+          </li>
+          <li class="metric-cell">
+            <strong class="metric-value">2</strong>
+            <span class="metric-caption">Opened in the country</span>
+          </li>
+          <li class="metric-cell">
+            <strong class="metric-value">10k+</strong>
+            <span class="metric-caption">Workspaces sold</span>
+          </li>
+          <li class="metric-cell">
+            <strong class="metric-value">260+</strong>
+            <span class="metric-caption">Office Variants</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="split-block wrapper anim-fade" id="about" aria-labelledby="about-heading">
+      <div class="split-content">
+        <h2 class="section-heading" id="about-heading">We Create Your Study More Ergonomic</h2>
+        <p class="body-large">FurniShop crafts home office setups that support healthy posture and keep cables, documents and tech neatly tucked away.</p>
+        <ul class="feature-points">
+          <li>
+            <h3>Workspace Ergonomic Audit</h3>
+            <p>Share your room dimensions and monitor setup, and our specialists will configure the ideal desk and seating height.</p>
+          </li>
+          <li>
+            <h3>Custom Cable &amp; Desk Modules</h3>
+            <p>Every desk includes integrated power trays, magnetic cable channels and attachable acoustic privacy panels.</p>
+          </li>
+        </ul>
+      </div>
+      <figure class="split-visual">
+        <img src="img/Workplace.avif" alt="Minimalist white desk with computer and ergonomic chair" width="554" height="443" loading="lazy">
+      </figure>
+    </section>
+
+    <section class="arrivals-section anim-fade" aria-labelledby="arrivals-heading">
+      <div class="arrivals-layout">
+        <div class="arrivals-sidebar">
+          <h2 class="section-heading" id="arrivals-heading">New In Store Now</h2>
+          <p>Upgrade your home study immediately with promo prices on new studio collections</p>
+          <a class="inline-link" href="#catalog">Check All <span aria-hidden="true">→</span></a>
+        </div>
+        <ul class="arrivals-track">
+          <li>
+            <a class="category-tile" href="#catalog">
+              <img src="img/Chair.avif" alt="Ergonomic office chairs" width="265" height="400" loading="lazy">
+              <span class="category-label">Task Chairs</span>
+            </a>
+          </li>
+          <li>
+            <a class="category-tile" href="#catalog">
+              <img src="img/WhiteWorkplace.avif" alt="Work desks and standing tables" width="265" height="400" loading="lazy">
+              <span class="category-label">Work Desks</span>
+            </a>
+          </li>
+          <li>
+            <a class="category-tile" href="#catalog">
+              <img src="img/Bookshelf.avif" alt="Office bookcases and shelving" width="265" height="400" loading="lazy">
+              <span class="category-label">Bookcases</span>
+            </a>
+          </li>
+          <li>
+            <a class="category-tile" href="#catalog">
+              <img src="img/Lamp.avif" alt="Desk lamps and studio lighting" width="265" height="400" loading="lazy">
+              <span class="category-label">Desk Lamps</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="split-block split-block-flipped wrapper anim-fade" id="features" aria-labelledby="maker-heading">
+      <div class="split-content">
+        <h2 class="section-heading" id="maker-heading">The Best Workspace Maker Of Your Choice</h2>
+        <p class="body-large">Natural walnut veneer, dual-motor steel frames and breathable mesh fabrics: we build home office furniture engineered for eight-hour comfort and backed by a 10-year structural guarantee.</p>
+      </div>
+      <figure class="split-visual">
+        <img src="img/Bookshelf.avif" alt="Bright modern study room with wooden bookcase" width="554" height="399" loading="lazy">
+      </figure>
+    </section>
+
+    <section class="catalog-section wrapper anim-fade" id="catalog" aria-labelledby="catalog-heading">
+      <header class="section-intro">
+        <h2 class="section-heading" id="catalog-heading">All Product</h2>
+        <p>The home office solutions we provide are selected from top ergonomic series with number 1 quality in the world</p>
+      </header>
+
+      <div class="catalog-grid">
+      <!-- cards:start -->
+        <article class="product-item" data-id="1">
+          <div class="product-thumb">
+            <img src="img/Lamp.avif" alt="Architect Matte Lamp" width="290" height="300" loading="lazy">
+            <button class="quick-add" type="button" data-title="Architect Matte Lamp" aria-label="Add Architect Matte Lamp to cart">+</button>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name"><a href="#catalog">Architect Matte Lamp</a></h3>
+            <p class="product-desc">Directional LED desk lamp with glare-free studio lighting</p>
+            <p class="product-pricing"><span class="price-current">$75.00</span> <s class="price-old">$82.00</s></p>
+          </div>
+        </article>
+
+        <article class="product-item" data-id="2">
+          <div class="product-thumb">
+            <img src="img/Chair.avif" alt="Nordic Swivel Chair" width="290" height="300" loading="lazy">
+            <button class="quick-add" type="button" data-title="Nordic Swivel Chair" aria-label="Add Nordic Swivel Chair to cart">+</button>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name"><a href="#catalog">Nordic Swivel Chair</a></h3>
+            <p class="product-desc">Ergonomic task chair with wooden legs and lumbar support</p>
+            <p class="product-pricing"><span class="price-current">$50.00</span> <s class="price-old">$70.00</s></p>
+          </div>
+        </article>
+
+        <article class="product-item" data-id="3">
+          <div class="product-thumb">
+            <img src="img/Bookshelf.avif" alt="Oak Library Bookcase" width="290" height="300" loading="lazy">
+            <button class="quick-add" type="button" data-title="Oak Library Bookcase" aria-label="Add Oak Library Bookcase to cart">+</button>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name"><a href="#catalog">Oak Library Bookcase</a></h3>
+            <p class="product-desc">Full-wall modular bookcase for home study and archives</p>
+            <p class="product-pricing"><span class="price-current">$105.00</span> <s class="price-old">$120.00</s></p>
+          </div>
+        </article>
+
+        <article class="product-item" data-id="4">
+          <div class="product-thumb">
+            <img src="img/BlueChair.avif" alt="Cobalt Executive Chair" width="290" height="300" loading="lazy">
+            <button class="quick-add" type="button" data-title="Cobalt Executive Chair" aria-label="Add Cobalt Executive Chair to cart">+</button>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name"><a href="#catalog">Cobalt Executive Chair</a></h3>
+            <p class="product-desc">High-back acoustic lounge chair for deep focus sessions</p>
+            <p class="product-pricing"><span class="price-current">$82.00</span> <s class="price-old">$100.00</s></p>
+          </div>
+        </article>
+
+        <article class="product-item" data-id="5">
+          <div class="product-thumb">
+            <img src="img/WhiteWorkplace.avif" alt="Trestle Studio Desk" width="290" height="300" loading="lazy">
+            <button class="quick-add" type="button" data-title="Trestle Studio Desk" aria-label="Add Trestle Studio Desk to cart">+</button>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name"><a href="#catalog">Trestle Studio Desk</a></h3>
+            <p class="product-desc">Spacious white workstation with integrated cable tray</p>
+            <p class="product-pricing"><span class="price-current">$200.00</span> <s class="price-old">$210.00</s></p>
+          </div>
+        </article>
+
+        <article class="product-item" data-id="6">
+          <div class="product-thumb">
+            <img src="img/Staff_Close.avif" alt="Desktop Organizer Kit" width="290" height="300" loading="lazy">
+            <button class="quick-add" type="button" data-title="Desktop Organizer Kit" aria-label="Add Desktop Organizer Kit to cart">+</button>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name"><a href="#catalog">Desktop Organizer Kit</a></h3>
+            <p class="product-desc">Matte desk pad and accessory set for a clutter-free surface</p>
+            <p class="product-pricing"><span class="price-current">$45.00</span> <s class="price-old">$50.00</s></p>
+          </div>
+        </article>
+
+        <article class="product-item" data-id="7">
+          <div class="product-thumb">
+            <img src="img/Workplace.avif" alt="Walnut Work Desk" width="290" height="300" loading="lazy">
+            <button class="quick-add" type="button" data-title="Walnut Work Desk" aria-label="Add Walnut Work Desk to cart">+</button>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name"><a href="#catalog">Walnut Work Desk</a></h3>
+            <p class="product-desc">Solid walnut executive table with warm ambient finish</p>
+            <p class="product-pricing"><span class="price-current">$320.00</span> <s class="price-old">$325.00</s></p>
+          </div>
+        </article>
+
+        <article class="product-item" data-id="8">
+          <div class="product-thumb">
+            <img src="img/WideRoom.avif" alt="Studio Credenza Unit" width="290" height="300" loading="lazy">
+            <button class="quick-add" type="button" data-title="Studio Credenza Unit" aria-label="Add Studio Credenza Unit to cart">+</button>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name"><a href="#catalog">Studio Credenza Unit</a></h3>
+            <p class="product-desc">Low-profile office storage cabinet for documents and gear</p>
+            <p class="product-pricing"><span class="price-current">$225.00</span> <s class="price-old">$240.00</s></p>
+          </div>
+        </article>
+
+        <article class="product-item" data-id="9">
+          <div class="product-thumb">
+            <img src="img/BlueChair.avif" alt="Studio Lounge Chair" width="290" height="300" loading="lazy">
+            <button class="quick-add" type="button" data-title="Studio Lounge Chair" aria-label="Add Studio Lounge Chair to cart">+</button>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name"><a href="#catalog">Studio Lounge Chair</a></h3>
+            <p class="product-desc">Ergonomic reading armchair in cobalt upholstery</p>
+            <p class="product-pricing"><span class="price-current">$95.00</span> <s class="price-old">$115.00</s></p>
+          </div>
+        </article>
+
+        <article class="product-item" data-id="10">
+          <div class="product-thumb">
+            <img src="img/WhiteWorkplace.avif" alt="Minimalist Study Desk" width="290" height="300" loading="lazy">
+            <button class="quick-add" type="button" data-title="Minimalist Study Desk" aria-label="Add Minimalist Study Desk to cart">+</button>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name"><a href="#catalog">Minimalist Study Desk</a></h3>
+            <p class="product-desc">Compact home office desk with lower storage shelf</p>
+            <p class="product-pricing"><span class="price-current">$180.00</span> <s class="price-old">$210.00</s></p>
+          </div>
+        </article>
+
+        <article class="product-item" data-id="11">
+          <div class="product-thumb">
+            <img src="img/Chair.avif" alt="Beige Comfort Task Chair" width="290" height="300" loading="lazy">
+            <button class="quick-add" type="button" data-title="Beige Comfort Task Chair" aria-label="Add Beige Comfort Task Chair to cart">+</button>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name"><a href="#catalog">Beige Comfort Task Chair</a></h3>
+            <p class="product-desc">Soft upholstered swivel seat for everyday remote work</p>
+            <p class="product-pricing"><span class="price-current">$70.00</span> <s class="price-old">$85.00</s></p>
+          </div>
+        </article>
+
+        <article class="product-item" data-id="12">
+          <div class="product-thumb">
+            <img src="img/Lamp.avif" alt="Matte Black Desk Lamp" width="290" height="300" loading="lazy">
+            <button class="quick-add" type="button" data-title="Matte Black Desk Lamp" aria-label="Add Matte Black Desk Lamp to cart">+</button>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name"><a href="#catalog">Matte Black Desk Lamp</a></h3>
+            <p class="product-desc">Adjustable steel reading light for late-night projects</p>
+            <p class="product-pricing"><span class="price-current">$60.00</span> <s class="price-old">$75.00</s></p>
+          </div>
+        </article>
+      <!-- cards:end -->
+      </div>
+
+      <nav class="catalog-pagination" aria-label="Catalog pagination">
+        <button class="circle-control" type="button" aria-label="Previous page">←</button>
+        <div class="pagination-dots" role="tablist"></div>
+        <button class="circle-control circle-control-solid" type="button" aria-label="Next page">→</button>
+      </nav>
+    </section>
+
+    <section class="reviews-section wrapper anim-fade" aria-labelledby="reviews-heading">
+      <h2 class="section-heading reviews-heading" id="reviews-heading">What People Are Saying About Us</h2>
+
+      <div class="reviewer-meta">
+        <img src="img/Girl_miniPortret.avif" alt="Portrait of Elena Rostova" width="80" height="80" loading="lazy">
+        <div>
+          <strong class="reviewer-name">Elena Rostova</strong>
+          <span class="reviewer-role">Senior Product Designer at New York Times</span>
+        </div>
+      </div>
+
+      <blockquote class="review-body" aria-live="polite">
+        <p>“They have a perfect touch for making a home office both professional and inspiring. The walnut desk and ergonomic chair completely transformed my remote workday.”</p>
+      </blockquote>
+
+      <img class="review-showcase" src="img/Workplace.avif" alt="Warm wooden home office desk with lamp and laptop" width="562" height="340" loading="lazy">
+
+      <div class="reviews-controls">
+        <button class="circle-control" type="button" aria-label="Previous testimonial">←</button>
+        <button class="circle-control circle-control-solid" type="button" aria-label="Next testimonial">→</button>
+      </div>
+    </section>
+
+    <section class="promo-banner" id="contact" aria-labelledby="promo-heading">
+      <img class="promo-bg" src="img/Workplace.avif" alt="" width="1440" height="490" loading="lazy">
+      <div class="wrapper promo-grid">
+        <div class="promo-content">
+          <h2 class="promo-heading" id="promo-heading">Get more discount Off your order</h2>
+          <p class="promo-subtext">Join our workspace mailing list</p>
+          <form class="subscribe-form" action="#">
+            <label class="visually-hidden" for="subscriber-email">Your email address</label>
+            <input id="subscriber-email" name="email" type="email" placeholder="Your email address" autocomplete="email" required>
+            <button class="action-btn action-btn-dark" type="submit">Shop Now</button>
+          </form>
+          <p class="subscribe-feedback" role="status"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="wrapper footer-container">
+      <div class="footer-brand-row">
+        <a class="footer-brand" href="#home">FurniShop</a>
+        <ul class="social-links">
+          <li>
+            <a href="#" aria-label="Instagram">
+              <img src="img/Icon_Instagramm.png" alt="" width="20" height="20" loading="lazy">
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Facebook">
+              <img src="img/Icon_FaceBook.png" alt="" width="20" height="20" loading="lazy">
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Twitter">
+              <img src="img/Icon_Twitter.png" alt="" width="20" height="20" loading="lazy">
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="GitHub">
+              <img src="img/Icon_GitHub.png" alt="" width="20" height="20" loading="lazy">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-columns">
+        <section>
+          <h2 class="footer-col-title">Our Products</h2>
+          <ul>
+            <li><a href="#catalog">Standing Desks</a></li>
+            <li><a href="#catalog">Ergonomic Chairs</a></li>
+            <li><a href="#catalog">Bookcases</a></li>
+            <li><a href="#catalog">Desk Lighting</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="footer-col-title">Top Features</h2>
+          <ul>
+            <li><a href="#">Cable Management</a></li>
+            <li><a href="#">Height Presets</a></li>
+            <li><a href="#">Acoustic Panels</a></li>
+            <li><a href="#">Modular Drawers</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="footer-col-title">Resources</h2>
+          <ul>
+            <li><a href="#">Ergonomics Guide</a></li>
+            <li><a href="#">Room Planner</a></li>
+            <li><a href="#">Assembly Manuals</a></li>
+            <li><a href="#">Workspace Blog</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="footer-col-title">Company</h2>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Investors</a></li>
+            <li><a href="#">Showrooms</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="footer-col-title">Favourite Things</h2>
+          <ul>
+            <li><a href="#">For Remote Teams</a></li>
+            <li><a href="#">For Startups</a></li>
+            <li><a href="#">For Home Studios</a></li>
+            <li><a href="#">For Freelancers</a></li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <div class="footer-copyright">
+      <p>© FurniShop 2026 - All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
